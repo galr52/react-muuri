@@ -143,7 +143,8 @@ export const MuuriComponent = forwardRef<DecoratedGrid, MuuriComponentProps>(
         forceSync={forceSync}
         dragFixed={dragFixed}
         dragEnabled={dragEnabled}
-        instantLayout={instantLayout}>
+        instantLayout={instantLayout}
+      >
         {children}
       </GridComponent>
     );

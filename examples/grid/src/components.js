@@ -13,7 +13,8 @@ export const Select = ({values, onChange}) => {
       <select
         className="control-field filter-field form-control"
         onChange={onChange}
-        defaultValue={values[0]}>
+        defaultValue={values[0]}
+      >
         {values.map((value, i) => (
           <option key={i} value={value.toLowerCase()}>
             {value}

@@ -13,8 +13,8 @@
     "test:watch": "jest test --watch",
     "type-check": "tsc --noEmit",
     "type-check:watch": "npm run type-check -- --watch",
-    "eslint": "./node_modules/.bin/eslint src/**/*.{js,jsx,ts,tsx} test/**/*.{js,jsx,ts,tsx}",
-    "prettier": "./node_modules/.bin/prettier --write **/*.{js,jsx,ts,tsx,md,mdx,json}",
+    "eslint": "eslint --fix \"src/**/*.{js,jsx,ts,tsx}\" \"test/**/*.{js,jsx,ts,tsx}\"",
+    "prettier": "prettier --write \"**/*.{js,jsx,ts,tsx,md,mdx,json}\"",
     "prepublishOnly": "npm run type-check && npm run test && npm run prettier && npm run build"
   },
   "homepage": "https://paol-imi.github.io/muuri-react",
@@ -54,17 +54,17 @@
     "@wojtekmaj/enzyme-adapter-react-17": "^0.6.3",
     "enzyme": "^3.11.0",
     "eslint": "^6.8.0",
-    "eslint-config-airbnb": "^18.0.1",
-    "eslint-config-prettier": "^6.10.1",
-    "eslint-plugin-import": "^2.20.2",
-    "eslint-plugin-jest": "^23.8.2",
-    "eslint-plugin-jsx-a11y": "^6.2.3",
-    "eslint-plugin-prettier": "^3.1.2",
-    "eslint-plugin-react": "^7.19.0",
+    "eslint-config-airbnb": "^18.2.1",
+    "eslint-config-prettier": "^6.15.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-jest": "^23.20.0",
+    "eslint-plugin-jsx-a11y": "^6.6.1",
+    "eslint-plugin-prettier": "^3.4.1",
+    "eslint-plugin-react": "^7.31.10",
     "eslint-plugin-react-hooks": "^3.0.0",
     "jest": "^25.2.6",
     "muuri": "^0.8.0",
-    "prettier": "^2.0.4",
+    "prettier": "^2.7.1",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "rollup": "^2.3.2",
@@ -78,6 +78,7 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.9.2",
-    "prop-types": "^15.7.2"
+    "prop-types": "^15.7.2",
+    "rollup-plugin-copy": "^3.4.0"
   }
 }

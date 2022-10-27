@@ -18,7 +18,8 @@ const WrappedMuuriComponent = forwardRef(
         if (itemsRef) itemsRef.current = new Items(grid);
         if (DOMItemsRef) DOMItemsRef.current = new DOMItems(grid);
         if (gridRef) gridRef.current = grid;
-      }}>
+      }}
+    >
       {children}
     </MuuriComponent>
   )

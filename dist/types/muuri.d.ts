@@ -362,7 +362,6 @@ export class ItemLayout {
     instant: boolean,
     onFinish?: (isInterrupted: boolean, item: Item) => any
   ): void;
-
   stop(processCallbackQueue: boolean, targetStyles?: StyleDeclaration): void;
   destroy(): void;
 }
@@ -373,12 +372,10 @@ export class ItemVisibility {
     instant: boolean,
     onFinish?: (isInterrupted: boolean, item: Item) => any
   ): void;
-
   hide(
     instant: boolean,
     onFinish?: (isInterrupted: boolean, item: Item) => any
   ): void;
-
   stop(processCallbackQueue: boolean, applyCurrentStyles?: boolean): void;
   setStyles(styles: StyleDeclaration): void;
   destroy(): void;
@@ -391,7 +388,6 @@ export class ItemMigrate {
     position: HTMLElement | number | Item,
     container?: HTMLElement
   ): void;
-
   stop(abort?: boolean, left?: number, top?: number): void;
   destroy(): void;
 }
@@ -404,12 +400,10 @@ export class ItemDrag {
     event: DraggerEvent,
     options?: DragStartPredicateOptions
   ): boolean | undefined;
-
   static defaultSortPredicate(
     item: Item,
     options?: DragSortPredicateOptions
   ): DragSortPredicateResult;
-
   stop(): void;
   sort(force?: boolean): void;
   destroy(): void;
@@ -455,7 +449,6 @@ export class Animator {
       onFinish?: (...args: any[]) => any;
     }
   ): void;
-
   stop(applyCurrentStyles?: boolean): void;
   isAnimating(): boolean;
   destroy(): void;
@@ -475,7 +468,6 @@ export class Dragger {
     event: T,
     listener: DraggerEvents[T]
   ): void;
-
   destroy(): void;
 }
 
@@ -494,7 +486,6 @@ export class AutoScroller {
     acceleration: number,
     deceleration: number
   ): DragAutoScrollSpeed;
-
   static pointerHandle(pointerSize: number): DragAutoScrollHandle;
   addItem(item: Item): void;
   updateItem(item: Item): void;
@@ -516,7 +507,6 @@ export class Packer {
     height: number,
     callback: LayoutFunctionCallback
   ): LayoutFunctionCancel | void;
-
   cancelLayout(id: number): void;
   destroy(): void;
 }

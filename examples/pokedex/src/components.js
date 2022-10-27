@@ -23,7 +23,8 @@ export const Select = ({values, onChange}) => (
     <select
       className="control-field filter-field form-control"
       onChange={onChange}
-      defaultValue={values[0]}>
+      defaultValue={values[0]}
+    >
       {values.map((value) => (
         <option key={value} value={value.toLowerCase()}>
           {value}
@@ -125,7 +126,8 @@ export const CardContent = React.memo(({types, name, number, pokedexIndex}) => {
       <div
         className="poke-card"
         data-pokemon-type={types[0]}
-        id="f727f904-94d9-48e1-ab91-f7e76f1f18f5">
+        id="f727f904-94d9-48e1-ab91-f7e76f1f18f5"
+      >
         <div className="poke-card__image">
           <img
             className=""
@@ -139,7 +141,8 @@ export const CardContent = React.memo(({types, name, number, pokedexIndex}) => {
             xmlSpace="preserve"
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
-            y="0px">
+            y="0px"
+          >
             <g>
               <polygon points="97.8,67.4 -2.3,3 7.6,-10.2" />
               <polygon points="213.5,153.5 301.4,211.2 293.8,221.2" />
@@ -221,7 +224,8 @@ export const CardContent = React.memo(({types, name, number, pokedexIndex}) => {
           {types.map((type) => (
             <li
               key={type}
-              className={'poke-card__types__' + type.toLowerCase()}>
+              className={'poke-card__types__' + type.toLowerCase()}
+            >
               <span>{type}</span>
             </li>
           ))}

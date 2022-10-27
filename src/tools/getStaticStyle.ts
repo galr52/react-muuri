@@ -31,9 +31,8 @@ export function getStaticStyle(options: StaticStyleOptions) {
   Object.assign(sizerElement.style, style);
 
   // Get the style from the sizer.
-  const {width, height, paddingTop, margin} = window.getComputedStyle(
-    sizerElement
-  );
+  const {width, height, paddingTop, margin} =
+    window.getComputedStyle(sizerElement);
 
   return {width, height, paddingTop, margin};
 }

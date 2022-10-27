@@ -85,7 +85,8 @@ const App = () => {
   return (
     <MuuriComponent
       propsToData={({id, text}) => ({id, text})}
-      sort={'text id:desc'}>
+      sort={'text id:desc'}
+    >
       {children}
     </MuuriComponent>
   );
@@ -142,7 +143,8 @@ It is possible to store the keys after a **drag** event 💾.
     const keys = items.map((item) => item.getKey());
 
     sendKeysToMyRemoteStore(keys); // keys: ["1", "2"]
-  }}>
+  }}
+>
   <Item key="1" />
   <Item key="2" />
 </MuuriComponent>
@@ -156,7 +158,8 @@ It is also possible to store them after each new **sort** 💾.
     const keys = currentOrder.map((item) => item.getKey());
 
     sendKeysToMyRemoteStore(keys); // keys: ["1", "2"]
-  }}>
+  }}
+>
   <Item key="1" />
   <Item key="2" />
 </MuuriComponent>

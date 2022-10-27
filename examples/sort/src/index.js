@@ -66,7 +66,8 @@ const App = () => {
         ref={muuriRef}
         dragEnabled={sort.value === 'drag'}
         sort={sort.value === 'drag' ? sort.keys : sort.value}
-        propsToData={({color, title}) => ({color, title})}>
+        propsToData={({color, title}) => ({color, title})}
+      >
         {children}
       </MuuriComponent>
       {/* Footer */}

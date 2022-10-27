@@ -38,7 +38,8 @@ const Item = ({color, width, height, title}) => {
   return (
     <div
       className={`item h${size.height} w${size.width} ${color}`}
-      onMouseUp={onMouseUp}>
+      onMouseUp={onMouseUp}
+    >
       <div className="item-content">
         <div className="card">
           <div className="card-title">{title}</div>

@@ -79,7 +79,8 @@ const App = () => {
                 axis: AutoScroller.AXIS_Y,
               },
             ],
-          }}>
+          }}
+        >
           {children}
         </MuuriComponent>
       </Switch>

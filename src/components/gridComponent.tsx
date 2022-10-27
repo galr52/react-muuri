@@ -259,12 +259,8 @@ export function GridComponent({
           } = sentPayload;
 
           // ReceivedPayload data.
-          const {
-            toChildrenController,
-            toFiberController,
-            toGrid,
-            toIndex,
-          } = receivedPayload;
+          const {toChildrenController, toFiberController, toGrid, toIndex} =
+            receivedPayload;
 
           // Reset the payloads.
           addDecoration(item, {sentPayload: null, receivedPayload: null});
@@ -575,7 +571,8 @@ export function GridComponent({
       <div
         {...gridProps}
         ref={store.gridRef}
-        {...store.fiberController.getFlagProp()}>
+        {...store.fiberController.getFlagProp()}
+      >
         {/** The children controller handle some memoization */}
         {store.childrenController.render((child, key) => (
           <ItemComponent
@@ -585,7 +582,8 @@ export function GridComponent({
             propsToData={propsToData}
             itemClasses={store.itemClasses}
             itemAddController={store.itemAddController}
-            itemRemoveController={store.itemRemoveController}>
+            itemRemoveController={store.itemRemoveController}
+          >
             {child}
           </ItemComponent>
         ))}

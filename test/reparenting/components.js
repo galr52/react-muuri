@@ -6,6 +6,7 @@ import {useGrid} from '../../src';
 export const ReparentingResponsiveItem = React.memo(({id, state}) => {
   const grid = useGrid().id;
   return (
+    // eslint-disable-next-line react/no-unknown-property
     <div id={id} state={state} grid={grid} className="item">
       <div className="item-content" />
     </div>

@@ -42,7 +42,8 @@ const App = () => {
           <MuuriComponent
             id="column"
             onSend={onSend}
-            {...getOptions(columnRef, dashboardRef, 'move')}>
+            {...getOptions(columnRef, dashboardRef, 'move')}
+          >
             {/* Column items */}
             {children.column}
           </MuuriComponent>
@@ -52,7 +53,8 @@ const App = () => {
           <MuuriComponent
             id="dashboard"
             onSend={onSend}
-            {...getOptions(dashboardRef, columnRef, 'swap')}>
+            {...getOptions(dashboardRef, columnRef, 'swap')}
+          >
             {/* Dashboard items */}
             {children.dashboard}
           </MuuriComponent>

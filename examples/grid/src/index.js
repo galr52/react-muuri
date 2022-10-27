@@ -61,7 +61,8 @@ const App = () => {
         {...options}
         propsToData={({color, title}) => ({color, title})}
         filter={filterFunction}
-        sort={sort.value}>
+        sort={sort.value}
+      >
         {children}
       </MuuriComponent>
       {/* Footer */}

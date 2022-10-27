@@ -38,7 +38,8 @@ const App = () => {
                 axis: AutoScroller.AXIS_X,
               },
             ],
-          }}>
+          }}
+        >
           {children}
         </MuuriComponent>
       </Scroll>

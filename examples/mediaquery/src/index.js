@@ -29,7 +29,8 @@ const App = () => {
           }}
           dragSortHeuristics={{
             sortInterval: 0,
-          }}>
+          }}
+        >
           {children}
         </MuuriComponent>
       </ThemeProvider>

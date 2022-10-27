@@ -102,7 +102,8 @@ function Showcase() {
                           className="button button--small button--secondary button--block"
                           href={user.website}
                           target="_blank"
-                          rel="noreferrer noopener">
+                          rel="noreferrer noopener"
+                        >
                           Website
                         </a>
                       )}
@@ -111,7 +112,8 @@ function Showcase() {
                           className="button button--small button--secondary button--block"
                           href={user.source}
                           target="_blank"
-                          rel="noreferrer noopener">
+                          rel="noreferrer noopener"
+                        >
                           Source
                         </a>
                       )}

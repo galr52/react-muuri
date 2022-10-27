@@ -22,7 +22,8 @@ export const ResizableWrapper = (Component, {width, height}) => {
       <div
         ref={ref}
         className="item"
-        style={{width: `${width}px`, height: `${height}px`}}>
+        style={{width: `${width}px`, height: `${height}px`}}
+      >
         <div className="muuri-item">
           {/* React-resizable is used to handle the resizing. */}
           <ResizableBox
@@ -34,7 +35,8 @@ export const ResizableWrapper = (Component, {width, height}) => {
               ref.current.style.height = size.height + 'px';
 
               refreshWithdebounce();
-            }}>
+            }}
+          >
             <Component {...props} />
           </ResizableBox>
         </div>
