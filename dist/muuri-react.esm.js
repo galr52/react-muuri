@@ -1,5 +1,5 @@
 /**
-* Muuri-react v3.1.6
+* Muuri-react v3.1.7
 * https://paol-imi.github.io/muuri-react
 * Copyright (c) 2020-present, Paol-imi
 * Released under the MIT license
@@ -2884,7 +2884,7 @@ function useDraggable() {
     itemRefController = _useItemContext.itemRefController;
 
   // Check if the hook is called inside an item.
-  invariant(itemRefController !== undefined, 'The useData hook can be used only inside an Item');
+  invariant(itemRefController !== undefined, 'The useDraggable hook can be used only inside an Item');
   var setDraggable = useFunction(function (draggable) {
     // Set if the item can be dragged.
     itemRefController.set('draggable', !!draggable);
@@ -2905,7 +2905,7 @@ function useGrid() {
   var reRender = useRerender();
 
   // Check if the hook is called inside an item.
-  invariant(eventController !== undefined && gridContext.grid !== undefined, 'The useData hook can be used only inside an Item');
+  invariant(eventController !== undefined && gridContext.grid !== undefined, 'The useGrid hook can be used only inside an Item');
 
   // The context is not updated when the hook is trigger
   // so we need to get the updated instance from the eventController.
@@ -2993,7 +2993,7 @@ function useVisibility() {
     itemRefController = _useItemContext.itemRefController;
 
   // Check if the hook is called inside an item.
-  invariant(itemRefController !== undefined && layoutController !== undefined && eventController !== undefined, 'The useData hook can be used only inside an Item');
+  invariant(itemRefController !== undefined && layoutController !== undefined && eventController !== undefined, 'The useVisibility hook can be used only inside an Item');
 
   // Set visibility.
   var setVisibility = useFunction(function (visible, options) {
