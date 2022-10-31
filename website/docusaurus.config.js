@@ -1,25 +1,25 @@
 module.exports = {
-  title: 'Muuri-react',
+  title: 'React Muuri Official',
   tagline: 'The layout engine for React',
-  url: 'https://paol-imi.github.io',
-  baseUrl: '/muuri-react/',
+  url: 'https://galr52.github.io',
+  baseUrl: '/react-muuri-official/',
   favicon: 'logo/muuri-transparent.png',
   organizationName: 'paol-imi',
-  projectName: 'muuri-react',
+  projectName: 'react-muuri-official',
   themeConfig: {
     announcementBar: {
       id: 'supportus',
       content:
-        '⭐️ If you like Muuri-react, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/paol-imi/muuri-react">GitHub</a>! ⭐️',
+        '⭐️ If you like react-muuri-official, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/galr52/react-muuri-official">GitHub</a>! ⭐️',
     },
     algolia: {
       apiKey: 'cc417223ab762185c5fb6de237deaba0',
-      indexName: 'muuri-react',
+      indexName: 'react-muuri-official',
     },
     navbar: {
-      title: 'Muuri-react',
+      title: 'React Muuri Official',
       logo: {
-        alt: 'Muuri-react Logo',
+        alt: 'React Muuri Official Logo',
         src: 'logo/muuri-transparent.png',
       },
       links: [
@@ -31,7 +31,7 @@ module.exports = {
         },
         {to: 'showcase', label: 'Showcase', position: 'left'},
         {
-          href: 'https://github.com/paol-imi/muuri-react',
+          href: 'https://github.com/galr52/react-muuri-official',
           label: 'GitHub',
           position: 'right',
         },
@@ -49,7 +49,7 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           editUrl:
-            'https://github.com/paol-imi/muuri-react/edit/master/website',
+            'https://github.com/galr52/react-muuri-official/edit/master/website',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
